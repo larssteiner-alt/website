@@ -118,12 +118,12 @@
         <section id="contact" class="sectie">
             <h2>📬 Contact</h2>
             <p>Heb je een leuk weetje over dieren? Stuur het ons!</p>
-            <div class="contact-form">
-                <input type="text" placeholder="Jouw naam" />
-                <input type="email" placeholder="Jouw e-mail" />
-                <textarea placeholder="Jouw weetje..."></textarea>
-                <button>Verstuur 🚀</button>
-            </div>
+            <form class="contact-form" action="https://formspree.io/f/JOUW_FORMSPREE_ID" method="POST">
+                <input type="text" name="naam" placeholder="Jouw naam" required />
+                <input type="email" name="email" placeholder="Jouw e-mail" required />
+                <textarea name="bericht" placeholder="Jouw weetje..."></textarea>
+                <button type="submit">Verstuur 🚀</button>
+            </form>
         </section>
 
         <!-- Footer -->
